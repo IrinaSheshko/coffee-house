@@ -616,6 +616,41 @@ section,
   }
 }
 
+@media (max-width: 768px) {
+  .topnav .open,
+  .topnav .topnav-right,
+  .topnav .topnav-centered {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Показываем кнопку-бургер */
+  .topnav .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fbc88c;
+    padding: 10px 0;
+  }
+
+  /* Когда меню открыто */
+  .topnav.responsive .open,
+  .topnav.responsive .topnav-centered,
+  .topnav.responsive .topnav-right {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .topnav.responsive .open a,
+  .topnav.responsive .topnav-right a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #fbc88c;
+  }
+}
+
 
 
 
